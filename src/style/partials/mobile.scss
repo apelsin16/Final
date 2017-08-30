@@ -1,0 +1,151 @@
+@media screen and (max-width: 320px) {
+  header {
+    width: 100%;
+    background-image: url(../img/bg320.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: #000;
+    text-align: center;
+    color: #fff;
+  }
+
+
+
+  .form-submit {
+    border: solid 2px #fff ;
+    border-radius: 19px;
+    background: none;
+    padding: 10px 18px;
+    font-size: 14px;
+    font-weight: 900;
+    font-style: bold;
+    margin: 20px;
+    color: #fff;
+  }
+
+  .form-submit:hover {
+    border-color: transparent;
+    border-radius: 19px;
+    background: none;
+  }
+
+
+
+  header h3 {
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 900;
+    font-size: 20px;
+    margin-top: 115px;
+
+  }
+
+  header h2 {
+    font-size: 30px;
+    font-weight: 900;
+    color: #fff;
+    margin-top: 38px;
+  }
+
+  header p {
+    font-size: 18px;
+    font-weight: 300;
+    margin: 19px 40px;
+  }
+
+  .form-find {
+    background-color: #ff4e50;
+    border-radius: 19px;
+    border: none;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 700;
+    padding: 12px 40px;
+    margin-bottom: 150px;
+  }
+
+  main {
+    text-align: center;
+  }
+
+  .header {
+    font-size: 22px;
+    color: #333;
+    margin: 38px 5px 12px 5px;
+  }
+
+  .instruction-step {
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0) 100%);
+    margin: 10px;
+    padding: 10px;
+    text-align: left;
+    color: #fff;
+  }
+  
+  .instruction-step:first-of-type {
+    background-image: url(../img/step1.png);
+  }
+
+  .instruction-step:nth-of-type(2) {
+    background-image: url(../img/step2.png);
+  }
+
+  .instruction-step:nth-of-type(3) {
+    background-image: url(../img/step3.png);
+  }
+
+  .instruction-step .step {
+    background-color: #ff4e50;
+    border-radius: 18px;
+    font-size: 10px;
+    padding: 5px 12px;
+    width: 70px;
+    margin-top: 60px;
+    text-transform: uppercase;
+    text-align: center;
+  }
+
+  .instruction-step_header {
+    font-size: 24px;
+    font-weight: 700;
+  }
+
+  .step-text {
+    font-family: roboto-light;
+    font-size: 14px;
+  }
+
+  .people-header {
+    font-size: 22px;
+    margin-top: 18px;
+  }
+
+  .person h5 {
+    font-size: 14px;
+    font-weight: 700;
+    margin: 20px;
+  }
+
+  .person-about {
+    font-family: roboto-light;
+    margin-bottom: 30px;
+  }
+
+  .search-bottom {
+    font-weight: 700;
+    background-color: inherit;
+    border: solid 2px #ff4e50;
+    border-radius: 19px;
+    font-size: 14px;
+    padding: 10px 60px 10px 60px;
+    color: #ff4e50;
+    margin: 30px;
+  }
+
+ .masonry-img {
+    height: 120px;
+    width: 300px;
+  }
+
+
+}
