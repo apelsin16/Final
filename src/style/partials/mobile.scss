@@ -1,4 +1,9 @@
 @media screen and (max-width: 320px) {
+
+  body {
+    text-align: center;
+  }
+
   header {
     width: 100%;
     background-image: url(../img/bg320.png);
@@ -66,6 +71,8 @@
 
   main {
     text-align: center;
+    border-bottom: 4px solid #ff4e50;
+
   }
 
   .header {
@@ -81,7 +88,7 @@
     text-align: left;
     color: #fff;
   }
-  
+
   .instruction-step:first-of-type {
     background-image: url(../img/step1.png);
   }
@@ -92,6 +99,10 @@
 
   .instruction-step:nth-of-type(3) {
     background-image: url(../img/step3.png);
+  }
+
+  .pagination {
+    display: none;
   }
 
   .instruction-step .step {
@@ -129,6 +140,7 @@
   .person-about {
     font-family: roboto-light;
     margin-bottom: 30px;
+    margin: 10px;
   }
 
   .search-bottom {
@@ -145,7 +157,89 @@
  .masonry-img {
     height: 120px;
     width: 300px;
+  margin-left: -15px;
+   padding: 0;
   }
 
+  .col {
+    position: relative;
+    margin: 10px;
+    }
+
+  .col-text {
+    position: absolute;
+    color: #fff;
+    z-index: 999;
+    font-size: 22px;
+    font-weight: 700;
+    margin-top: 45px;
+
+  }
+
+  .col-text_wrap {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    }
+
+  .searching-text {
+    font-family: roboto-light;
+    font-size: 18px;
+    margin: 10px;
+  }
+
+  .searching {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+  }
+
+  .searching-textfield {
+   padding: 10px;
+    margin: 10px;
+  }
+
+  .bottom {
+    width: 280px;
+    margin-left: 14px;
+    margin-bottom: 40px;
+  }
+
+  .footer-header {
+    color: #ff4e50;
+    font-weight: 700;
+    font-size: 16px;
+    margin: 15px;
+  }
+
+  .footer-menu {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px;
+  }
+
+  .footer-link {
+    text-decoration: none;
+    color: #666666;
+    font-family: roboto-light;
+  }
+
+
+  .partners-link {
+    text-decoration: none;
+    color: #000000;
+  }
+
+  .footer-text {
+   color: #ccc;
+   font-weight: 700;
+   text-transform: uppercase;
+   font-size: 10px;
+    margin-top: 20px;
+  }
+
+  .footer-logo {
+    margin: 10px;
+  }
 
 }

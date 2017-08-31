@@ -32,7 +32,9 @@ inputPhoto(ideas[4],4);
 inputPhoto(ideas[5],5);
 inputPhoto(ideas[6],6);
 
-
+var $grid = $('.grid').masonry({
+    // options...
+});
 // function render(template, data, parent) {
 //     var htmlString = ' ';
 //
