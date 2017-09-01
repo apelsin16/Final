@@ -172,7 +172,7 @@
     font-size: 22px;
     margin-top: 100px;
     margin-bottom: 30px;
-    width: 75%;
+    width: 100%;
   }
 
   .person {
@@ -205,18 +205,22 @@
 
   .masonry-img {
     height: 310px;
-    width: 236px;
+    width: 100%;
     margin-left: -15px;
     padding: 0;
     border-radius: 5px;
   }
 
   .masonry-img__width2 {
-    width: 450px;
+    width: 100%;
   }
 
   .last {
-    margin-left: 20px;
+    margin-left: -20px;
+  }
+
+  .width2 {
+    margin-left: 5px;
   }
 
   .col {
@@ -230,7 +234,7 @@
   }
 
   .grid-item--width2 {
-    width: 60%;
+    width: 55%;
   }
 
   .grid-sizer {
@@ -241,10 +245,11 @@
     position: absolute;
     color: #fff;
     z-index: 999;
-    font-size: 22px;
+    font-size: 19px;
     font-weight: 700;
     margin-top: 130px;
-
+    margin-left: -10px;
+    text-shadow: 1px 0px 0px rgba(0, 0, 0, 1);
   }
 
   .col-text_wrap {
@@ -305,8 +310,8 @@
     align-items: baseline;
     //margin: 20px;
     position: absolute;
-    margin-left: -90px;
-    margin-top: 50px;
+    margin-left: 15px;
+    //margin-top: 20px;
     margin-bottom: 20px;
   }
 
@@ -340,8 +345,10 @@
     margin: 10px;
   }
 
-
-
-
-
 }
+
+//@media screen and (min-width: 321px) and (max-width: 479px){
+//
+//margin-top: 0;
+//
+//}

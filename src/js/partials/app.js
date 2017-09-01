@@ -1,7 +1,7 @@
 var ideas = ['Sport and Activity', 'Wellness and Health', 'Extreme Sports and Expeditions', 'Games', 'Culture' +
 ' and Education', 'Relaxation', 'Travelling'];
 
-function inputPhoto(a, b) {
+function inputPhoto(a, b, c) {
 
 
 var apiURL = 'https://pixabay.com/api/?key=5992000-de0663331a4d0b877fb659d73&q=' + a + '&orientation=horizontal';
@@ -14,7 +14,7 @@ var promise = fetch(apiURL)
             throw new Error('Error during fetch');
         })
         .then(function(data){
-            var y = _.random(1,8);
+            var y = _.random(1,c);
             console.log(data.hits[y].webformatURL);
             var link = data.hits[y].webformatURL;
             console.log(link);
@@ -24,16 +24,19 @@ var promise = fetch(apiURL)
  })
 }
 
-inputPhoto(ideas[0],0);
-inputPhoto(ideas[1],1);
-inputPhoto(ideas[2],2);
-inputPhoto(ideas[3],3);
-inputPhoto(ideas[4],4);
-inputPhoto(ideas[5],5);
-inputPhoto(ideas[6],6);
+inputPhoto(ideas[0],0,10);
+inputPhoto(ideas[1],1,20);
+inputPhoto(ideas[2],2,3);
+inputPhoto(ideas[3],3,20);
+inputPhoto(ideas[4],4,20);
+inputPhoto(ideas[5],5,10);
+inputPhoto(ideas[6],6,10);
 
-var $grid = $('.grid').masonry({
-    // options...
+var $grid = $('.grid').imagesLoaded( function() {
+    // init Masonry after all images have loaded
+    $grid.masonry({
+        // options...
+    });
 });
 // function render(template, data, parent) {
 //     var htmlString = ' ';
