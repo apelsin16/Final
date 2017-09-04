@@ -15,11 +15,11 @@ var promise = fetch(apiURL)
         })
         .then(function(data){
             var y = _.random(1,c);
-            console.log(data.hits[y].webformatURL);
+            // console.log(data.hits[y].webformatURL);
             var link = data.hits[y].webformatURL;
-            console.log(link);
+            // console.log(link);
             var img = document.getElementById(b);
-            console.log(img);
+            // console.log(img);
             img.setAttribute('src', link);
  })
 }
@@ -28,16 +28,73 @@ inputPhoto(ideas[0],0,10);
 inputPhoto(ideas[1],1,20);
 inputPhoto(ideas[2],2,3);
 inputPhoto(ideas[3],3,20);
-inputPhoto(ideas[4],4,20);
-inputPhoto(ideas[5],5,10);
+inputPhoto(ideas[4],4,8);
+inputPhoto(ideas[5],5,8);
 inputPhoto(ideas[6],6,10);
 
 var $grid = $('.grid').imagesLoaded( function() {
     // init Masonry after all images have loaded
     $grid.masonry({
+        fitWidth: true
         // options...
     });
 });
+
+function hideColText() {
+    var $colText = $('.col-text');
+    console.log($colText);
+    $colText.hide();
+}
+
+
+
+function createURL() {
+    var input = document.getElementById('searching');
+    console.log(searching);
+    var q = input.value;
+    return ('https://pixabay.com/api/?key=5992000-de0663331a4d0b877fb659d73&q=' + q + '&orientation=horizontal');
+}
+var apiUrl = createURL();
+console.log(apiUrl);
+
+
+var btn = document.getElementById('btn');
+
+btn.addEventListener('clock', createURL);
+
+
+
+
+function searchPhoto () {
+
+}
+
+
+
+// var arrowLeft = document.getElementsByClassName('fa-angle-left');
+// var arrowRight = document.getElementsByClassName('fa-angle-right');
+//
+// console.log(arrowRight);
+// var step1 = document.getElementById('block1');
+// var step2 = document.getElementById('block2');
+// var step3 = document.getElementById('block3');
+//
+// console.log(step1);
+// arrowLeft[0].addEventListener('click', function (){
+// if (step1.style.backgroundImage == "url('../img/step1-1440.png')") {
+//
+//     step1.style.backgroundImage = "url('../img/step3-1440.png')";
+//
+// } if (step1.style.backgroundImage == "url('../img/step2-1440.png')"){
+//
+//
+//
+// }
+// function changeBg () {
+//     if (  )
+//
+// }
+
 // function render(template, data, parent) {
 //     var htmlString = ' ';
 //

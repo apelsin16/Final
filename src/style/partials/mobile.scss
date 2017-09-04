@@ -1,4 +1,4 @@
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 480px) {
 
   body {
     text-align: center;
@@ -87,6 +87,8 @@
     padding: 10px;
     text-align: left;
     color: #fff;
+    background-repeat: no-repeat;
+    background-size: cover;
   }
 
   .instruction-step:first-of-type {
@@ -161,10 +163,11 @@
    padding: 0;
   }
 
-  .col {
-    position: relative;
-    margin: 10px;
-    }
+  .grid{
+    margin: 0 auto;
+  }
+
+
 
   .col-text {
     position: absolute;
